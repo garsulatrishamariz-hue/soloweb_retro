@@ -1,0 +1,103 @@
+body {
+    box-sizing: border-box;
+}
+
+/* Themes */
+.theme-pink {
+    --bg-primary: #fdf2f8;
+    --bg-secondary: #fce7f3;
+    --accent: #ec4899;
+    --text: #831843;
+    --card-bg: #ffffff;
+}
+
+.theme-cyan {
+    --bg-primary: #ecfeff;
+    --bg-secondary: #cffafe;
+    --accent: #0891b2;
+    --text: #164e63;
+    --card-bg: #ffffff;
+}
+
+/* Containers */
+.gallery-container {
+    background: var(--bg-primary);
+    color: var(--text);
+    min-height: 100%;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 2px solid var(--bg-secondary);
+}
+
+.accent-btn {
+    background: var(--accent);
+    color: white;
+}
+
+.accent-btn:hover {
+    opacity: 0.9;
+}
+
+.accent-border {
+    border-color: var(--accent);
+}
+
+.photo-placeholder {
+    background: var(--bg-secondary);
+    border: 2px dashed var(--accent);
+}
+
+.volume-slider {
+    accent-color: var(--accent);
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #f50057;
+  width: 0%;
+  border-radius: 4px;
+}
+
+#progress-thumb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #f50057;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: left 0.1s linear;
+}
+
+
+.thumbnail-btn {
+    background: var(--bg-secondary);
+    border: 2px solid transparent;
+}
+
+.thumbnail-btn:hover {
+    border-color: var(--accent);
+    transform: scale(1.1);
+}
+
+.thumbnail-btn.active-thumb {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: white;
+}
+
+@view-transition {
+    navigation: auto;
+}
